@@ -1,0 +1,35 @@
+<h1>This component created manually</h1>
+<div> 
+    Steps invloved in creating manual component
+	<ol>
+		<li>Create a folder named "manualComponent"</li>
+		<li>Create the files - (manualComponent.component.html, manualComponent.component.ts, manualComponent.module.ts)</li>
+		<li> Content within 
+			<ol>
+				<li>
+					<h6>manualComponent.component.html</h6>
+					<div>Some html code that needs to be displayed when the server</div>
+				</li>
+				<li>
+					<h6>manualComponent.component.ts</h6>
+					<div>This file contains : @Component which declares the templateUrl, selector, stylesheet and the export Class which will have parameters that needs to be populated in the html component.</div>
+				</li>
+				<li>
+					<h6>manualComponent.module.ts</h6>
+					<div>This file contains : @NgModule which has declarations -> Component exported above, imports -> Browser Module, bootstrap, providers</div>
+				</li>
+			</ol>
+        </li>
+		<li>Now for this content to be displayed in the HTML, this selector should be added in the app.component.html</li>
+	</ol>
+</div>
+<br>
+<div> Angular Interpolated Data ::: {{interpolatedVar}} </div>
+
+<div> Angular Data Binding ::: <input type = "text" [value]="dataBindingVar"> </div>
+
+<br>
+<div id="buttonText"></div>
+<button (click)="buttonFunction()" title="Please click this button">Button Text</button>
+
+<input #templateVariable type="text" id="tempVarInput" (keyup.enter)="onKeyUpFunc(templateVariable)" placeholder="Kindly start entering a value"/>
