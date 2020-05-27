@@ -105,4 +105,78 @@ Put it in the HTML
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-Still pending : Diff between Template & Template Url, View Child, Two way binding, Ng-Content, Input and output properties 
+Stage 8 : Difference between template and Template URL
+
+Template URL : points to the HTML file which acts as the template for the HTML
+
+Template : If the content is too small that using Template URL seems much work, we can provide the HTML content directly in the Component
+
+    Type 1 : Single line :
+        template : 'HTML content'
+
+    Type 2 : Multi line : 
+        template : `HTML Content`
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Stage 9 : View Child Decorator.
+
+View Child decorator is used to access the child component. 
+
+This is achieved by using this decorator at export class @ViewChild(VariableName)
+
+This variableName should be declared in HTML. This variable accessess as the referring variable.
+
+We can use it to refer the component and then set the data to that component
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Stage 10 : Angular Two Way Binding. 
+
+Angular Two way binding is a method where the data is kept in sync between the component and the template. This is achieved using a specific Syntax. [()]. This syntax is known as "Banana Box Syntax". 
+
+For this to take effect we need to import FormsModule in @angular/forms. 
+------------------------------------------------------------------------------------------------------------------------------
+
+Stage 11 : Ng-content
+
+Ng-Content is used to dynamically paste the data. It does what interpolation does but in a larger scale. Also this is used to use reuse components. 
+
+<ng-content> tag is declared in the child component. And the data for the ng-content is passed from Parent Component.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Step 12 : Input and output properties
+
+Input & Output properties are used to move the data from Parent to Child component and vice versa.
+
+Steps to declare the input props 
+
+    Parent Component.html
+
+    <new-selector [childDataPassingParameter]="Data">
+
+    Parent Component.ts
+
+    export AppComponent{
+        Data : string = "Data";
+    }
+
+    Child Component.ts
+
+    export ChildComponent{
+        @Input("childDataPassingParameter") public variableName;
+    }
+
+    Child Component.html
+
+    {{variableName}}
+
+Steps to declare output props
+
+    Data from Child to Parent will be shared only on any event.
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------

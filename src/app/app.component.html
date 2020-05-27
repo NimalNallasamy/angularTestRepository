@@ -298,7 +298,15 @@
   }
 </style>
 
-<manualComponent></manualComponent>
+<br><br><br><br>
+<div>Data : </div>
+<div>This data is brought from Child Component to the parent Component {{childData}}</div>
+<input [(ngModel)]="dataSync" placeholder="Test" type="text">
+<div>{{dataSync}}</div>
+
+<manualComponent [parentData]="childData" (childDataOutput)="message=$event">
+  Test Paragraph
+</manualComponent>
 
 <app-command-line-component></app-command-line-component>
 

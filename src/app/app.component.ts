@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularTestApp';
+
+  dataSync = "Hello";
+
+  childData : string = "This data is processed from Parent Data to Child Data";
+
+  message = "";
 }

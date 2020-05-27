@@ -33,3 +33,16 @@
 <button (click)="buttonFunction()" title="Please click this button">Button Text</button>
 
 <input #templateVariable type="text" id="tempVarInput" (keyup.enter)="onKeyUpFunc(templateVariable)" placeholder="Kindly start entering a value"/>
+
+
+<div><ul>
+	<h3>This is to test the View Child Decorator</h3>
+	<input #someInput type="text" placeholder="Enter some value"/>
+	</ul>
+</div>
+
+<div><ng-content></ng-content></div>
+
+<div>This Div is to show the data passed from Parent to Child ::: {{parentData}}</div>
+
+<button (click)="callEvent()">Click this button to send the data from child Data to Parent</button>
