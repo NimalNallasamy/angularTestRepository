@@ -2,3 +2,22 @@
 
 <div> To use this type to create component, type ng generate component "Component Name"</div>
 
+<table>
+    <thead>
+        <td>Game Name</td>
+        <td>Game Genre</td>
+        <td>Game Mode</td>
+        <td>Game Equipment</td>
+        <td>Game Rating</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let items of gamesData">
+            <td>{{items.name}}</td>
+            <td>{{items.genre}}</td>
+            <td>{{items.mode}}</td>
+            <td>{{items.equipment}}</td>
+            <td>{{items.rating}}</td>
+        </tr>
+    </tbody>
+</table>
+

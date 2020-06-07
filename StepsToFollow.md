@@ -203,6 +203,28 @@ Data assigning can be done both in Constructor and ngOnInit. Both would produce 
 
 ------------------------------------------------------------------------------------------------------------------------------
 
+Step 14 : Angular Observable
+
+Angular HTTP methods return data to service as an Observable object. We need to work with the Observable object to bring this to component to show that up to the customer. 
+
+There are 4 steps that we need to follow to get the data and show in the component. 
+
+1. Make a HTTP Request.
+2. Get an Observable response.
+3. Type Cast the observable to required data format.
+4. Schedule a listening.
+
+Steps to achieve this as per with this example. - We will be trying this with the command line component.
+
+1. Data can be retrieved from Database or through an API to another service. Since we don't have any DB to contact, we are hard-coding the response in a File under assets>JSONData>DataFile.json
+
+2. Create a service which will get the data from this file.
+    2.1 Constructor should be having the Http Client as a parameter.
+
+3. Casting is Done by creating a new ts file and exporing an interface that will have the keys from the data. 
+
+4. Subscribe the data.
+
 
 
 ------------------------------------------------------------------------------------------------------------------------------

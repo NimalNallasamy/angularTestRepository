@@ -1,0 +1,10 @@
+[
+    {"name" : "Witcher 3 : The Wild Hunt", "genre" : "Action-Role Playing" ,"mode" : "Single Player", "equipment" : "PC", "rating" : 93},
+    {"name" : "Middle Earth - Shadow of War", "genre" : "Action-Role Playing" ,"mode" : "Single Player", "equipment" : "PC", "rating" : 93},
+    {"name" : "Hitman Absolution", "genre" : "Action-Role Playing" ,"mode" : "Single Player", "equipment" : "PC", "rating" : 95},
+    {"name" : "Age of Empires", "genre" : "Real Time Strateric" ,"mode" : "Single Player", "equipment" : "PC", "rating" : 95},
+    {"name" : "GTA V", "genre" : "First Person Shooter" ,"mode" : "Single Player", "equipment" : "PC", "rating" : 70},
+    {"name" : "FIFA 20", "genre" : "Sports" ,"mode" : "Single/Multi Player", "equipment" : "PS/Xbox", "rating" : 81},
+    {"name" : "PUBG Mobile", "genre" : "First Person Shooter" ,"mode" : "Single Player", "equipment" : "Mobile", "rating" : 85},
+    {"name" : "FIFA Moile", "genre" : "Sports" ,"mode" : "Single Player", "equipment" : "Mobile", "rating" : 25}
+]

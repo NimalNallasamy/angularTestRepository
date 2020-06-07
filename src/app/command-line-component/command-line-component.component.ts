@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GamesServiceService } from '../games-service.service';
+
 
 @Component({
   selector: 'app-command-line-component',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommandLineComponentComponent implements OnInit {
 
-  constructor() { }
+  gamesData = [ ];
 
-  ngOnInit(): void {
+  constructor(private _gamesService : GamesServiceService){
+
+  }
+  
+  // ngOnInit(){
+
+  // }
+
+  ngOnInit(){
+    this._gamesService.getData().subscribe(data => this.gamesData = data);
   }
 
 }
