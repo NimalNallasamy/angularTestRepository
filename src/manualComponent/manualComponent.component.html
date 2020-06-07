@@ -1,4 +1,20 @@
 <h1>This component created manually</h1>
+
+<table>
+	<thead>
+		<td>S.No</td>
+		<td>Name</td>
+		<td>Age</td>
+	</thead>
+	<tbody>
+		<tr *ngFor="let items of nameListArray">
+			<td>{{items.sNo}}</td>
+			<td>{{items.Name}}</td>
+			<td>{{items.Age}}</td>
+		</tr>
+	</tbody>
+</table>
+
 <div> 
     Steps invloved in creating manual component
 	<ol>

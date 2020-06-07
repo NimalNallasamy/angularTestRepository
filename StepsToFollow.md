@@ -176,6 +176,32 @@ Steps to declare output props
 
     Data from Child to Parent will be shared only on any event.
 
+------------------------------------------------------------------------------------------------------------------------------
+
+Step 13 : Angular Service and Dependency Injection : 
+
+Data that are fetched from the data base or through any other means are served to the front end by the help of "Service". For this we will be using the concept of Dependency Injection. 
+
+As an initial measure, the data table shown is written with Hard Coded data in the typescript of the respective component. The disadvantage with this type is that this same data is hard to share with another component. To avoid it we will be using the service method to do the data provider job and use dependency injection to obtain the data from ther service to the required component
+
+To create the service we need to type in the command,
+
+ng generate services <<service name>>
+
+This would create files with the name <<service name>>.services.ts and <<service name>>.service.spec.ts
+
+Then write a function to fetch the required data and return it.
+
+Initialise the class in constructor in the required component, with it call to get the required data. 
+
+Difference between ngOnInit and constructor : 
+
+    1. Constructor is called prior to ngOnInit. 
+    2. And its better to keep the data assigning part always on the init. 
+
+Data assigning can be done both in Constructor and ngOnInit. Both would produce the same result. 
+
+------------------------------------------------------------------------------------------------------------------------------
 
 
 
