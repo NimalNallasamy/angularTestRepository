@@ -225,6 +225,18 @@ Steps to achieve this as per with this example. - We will be trying this with th
 
 4. Subscribe the data.
 
-
-
 ------------------------------------------------------------------------------------------------------------------------------
+
+Step 15 : 
+
+Template Forms
+
+There are 2 types of forms in Angular
+1. Template based forms
+2. Reactive Forms
+
+Right now we are about to see the template forms alone.
+
+Template based forms have the advantage of using the built in validators. Reactive based forms cant use built in forms. 
+
+Inside a form, for any input type, we would have #variable="ngModel" and use this variable to check if there are any errors or not.

@@ -8,10 +8,11 @@ import { CommandLineComponentComponent } from './command-line-component/command-
 import { PersonalDataServiceService } from './personal-data-service.service';
 import { GamesServiceService } from './games-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { TemplateFormsComponent } from './template-forms/template-forms.component';
 
 @NgModule({
   declarations: [
-    AppComponent, manualComponent, CommandLineComponentComponent
+    AppComponent, manualComponent, CommandLineComponentComponent, TemplateFormsComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule

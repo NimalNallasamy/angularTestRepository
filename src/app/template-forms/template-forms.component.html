@@ -1,0 +1,15 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    Name <input type="text" name="name" #nameValidator="ngModel" ngModel required/><br><br>
+    <div *ngIf="nameValidator.errors && nameValidator.touched">
+        Name is empty kindly correct it.
+    </div>
+    Email <input type="text" name="email" #emailValidator="ngModel" ngModel email><br><br>
+    <!-- <div *ngIf="emailValidator.errors && emailValidator.errors['email'] && emailValidator.touched">
+        Name is empty kindly correct it.
+    </div> -->
+    Address <input type="text" name="address" #addressValidator="ngModel" ngModel minlength="6"/><br><br>
+    <!-- <div *ngIf="addressValidator.errors && addressValidator.errors['minlength'] < 7 && addressValidator.touched">
+        Name is empty kindly correct it.
+    </div> -->
+    <button class="btn btn-primary">Submit</button>
+</form>
