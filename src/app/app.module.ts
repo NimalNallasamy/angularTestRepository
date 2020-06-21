@@ -9,13 +9,15 @@ import { PersonalDataServiceService } from './personal-data-service.service';
 import { GamesServiceService } from './games-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { TemplateFormsComponent } from './template-forms/template-forms.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
-    AppComponent, manualComponent, CommandLineComponentComponent, TemplateFormsComponent
+    AppComponent, manualComponent, CommandLineComponentComponent, TemplateFormsComponent, ReactiveFormsComponent
   ],
   imports: [
-    BrowserModule, FormsModule, HttpClientModule
+    BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule
   ],
   providers: [PersonalDataServiceService, GamesServiceService],
   bootstrap: [AppComponent]

@@ -1,0 +1,33 @@
+<h1> Reactive Forms Testing </h1>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>
+        First Name : 
+        <input type="text" formControlName="firstName" required>
+    </label><br><br>
+    <label>
+        Last Name : 
+        <input type="text" formControlName="lastName" required>
+    </label><br><br>
+    <div formGroupName="address">
+        <label>
+            Street : 
+            <input type="text" formControlName="street" required>
+        </label><br><br>
+        <label>
+            City : 
+            <input type="text" formControlName="city">
+        </label><br><br>
+        <label>
+            Zip : 
+            <input type="text" formControlName="zip">
+        </label><br><br>
+        <label>
+            Country : 
+            <input type="text" formControlName="country">
+        </label><br><br>
+    </div>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button> 
+</form>
+
+<div>is the profile form valid : {{profileForm.valid}}</div>
